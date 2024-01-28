@@ -19,7 +19,7 @@ function Home() {
 
   const handleChange = event => {
     setSearchTerm(event.target.value);
-  };
+  };  
 
   return (
     <div className="home">
@@ -34,10 +34,10 @@ function Home() {
             className="border border-gray-300 px-3 py-2 rounded-lg w-full"
           />
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="card-grid">
           {filteredPosts.map(post => (
-            <Link key={post.id} to={`/post/${post.id}`} className="block">
-              <Card title={post.name} content={post.content} />
+            <Link key={post.id} to={`/post?id=${post.id}`} className="card-link">
+              <Card title={post.name} author={post.author} />
             </Link>
           ))}
         </div>

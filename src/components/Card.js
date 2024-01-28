@@ -6,7 +6,7 @@ function Card({ title, content }) {
   return (
     <div className="card">
       <div className="card-content">
-        <h2 className="card-title">{title}</h2>
+        <h2 className="card-title" data-highlight={title}>{title}</h2>
         <p className="card-text">{content}</p>
       </div>
     </div>

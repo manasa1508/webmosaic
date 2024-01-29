@@ -1,6 +1,6 @@
 // Footer.js
 import React from 'react';
-import './App.scss'; // Import SCSS file for component-specific styles
+import '../App.scss'; // Import SCSS file for component-specific styles
 
 function Footer() {
   return (

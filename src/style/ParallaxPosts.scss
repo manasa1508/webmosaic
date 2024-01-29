@@ -1,0 +1,25 @@
+/* ParallaxPosts.scss */
+
+.parallax-post {
+    background-image: url('https://img.freepik.com/free-photo/flat-lay-workstation-with-copy-space-laptop_23-2148430879.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 500px; /* Adjust the height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    /* Add any other styling properties as needed */
+  }
+  
+  .parallax-post h2 {
+    margin-bottom: 20px;
+  }
+  
+  .parallax-post p {
+    margin-bottom: 40px;
+  }
+  

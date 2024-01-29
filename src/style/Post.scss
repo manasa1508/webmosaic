@@ -1,0 +1,48 @@
+.post-card {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.post-card:hover {
+  transform: translateY(-6px) rotateX(360deg) scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.post-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.post-title {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.post-details {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  margin-bottom: 20px;
+}
+
+.post-details h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.post-details p {
+  margin-bottom: 5px;
+}
+
+.post-details .author {
+  font-style: italic;
+}
+
+.post-details .likes-dislikes {
+  margin-top: 10px;
+}

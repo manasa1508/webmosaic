@@ -10,14 +10,17 @@ const HomePage = () => {
   const [posts, setPosts] = useState([]);
   const [filteredPosts, setFilteredPosts] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
+  //const [length, setLength] =useState(0);
   const { postId } = useParams();
 
+  
   useEffect(() => {
     fetch('https://webmosaic.petrichor.events/posts')
       .then(response => response.json())
       .then(data => {
         setPosts(data.posts);
         setFilteredPosts(data.posts);
+        //setLength(data.posts.length);
       })
       .catch(error => console.error('Error fetching posts:', error));
   }, []);
@@ -30,7 +33,6 @@ const HomePage = () => {
     );
     setFilteredPosts(filtered);
   };
-
   return (
     <div className="home-page">
       <div className="search-container">
@@ -43,7 +45,7 @@ const HomePage = () => {
       </div>
       <div className="posts-container">
         {postId ? (
-          <PostPage postId={postId} />
+          <PostPage postId={postId}/>
         ) : (
           <PostsList posts={filteredPosts} />
         )}

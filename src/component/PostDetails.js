@@ -9,7 +9,6 @@ const PostDetails = ({ post, author }) => {
         <div className="parallax-post"> {/* Add parallax scrolling effect to this div */}
         <h2>{post.name}</h2>
       </div>
-      
       <p className="author">Author: {author.name}</p>
       <p dangerouslySetInnerHTML={{ __html: formattedBody }}></p>
       <p className="likes-dislikes">Likes: {post.likes}</p>

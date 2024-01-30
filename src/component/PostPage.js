@@ -9,6 +9,7 @@ const PostPage = () => {
   const [post, setPost] = useState(null);
   const [comments, setComments] = useState([]);
   const [author, setAuthor] = useState(null);
+  const [length, setLength] = useState(0);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -21,8 +22,15 @@ const PostPage = () => {
           .then(authorData => setAuthor(authorData))
           .catch(error => console.error('Error fetching author:', error));
       })
-      .catch(error => console.error('Error fetching post:', error));
+      //console.log(length)
   }, [postId]);
+
+  useEffect(() => {
+    fetch('https://webmosaic.petrichor.events/posts')
+      .then(response => response.json())
+      .then(data => setLength(data.posts.length)) // Set length of posts
+      .catch(error => console.error('Error fetching posts:', error));
+  }, []);
 
   const handleBack = () => {
     navigate(-1);
@@ -36,7 +44,7 @@ const PostPage = () => {
     <div className="post-page">
       <button onClick={handleBack}>Back</button>
       <PostDetails post={post} author={author} />
-      <Comments postId={postId} />
+      <Comments postId={postId} length={length} />
     </div>
   );
 };

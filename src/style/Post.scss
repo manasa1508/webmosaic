@@ -1,48 +1,59 @@
+/* PostCard.scss */
 .post-card {
   margin-bottom: 20px;
   padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
   transition: transform 0.3s, box-shadow 0.3s;
+  background-color: #ffffff;
 }
 
 .post-card:hover {
-  transform: translateY(-6px) rotateX(360deg) scale(1.05);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .post-link {
   text-decoration: none;
-  color: inherit;
+  color: #333333;
 }
 
 .post-title {
   margin-bottom: 10px;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bold;
+  color: #1a237e;
 }
 
+/* PostDetails.scss */
 .post-details {
   padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  background-color: #f9f9f9;
+  border: 2px solid #1a237e;
+  border-radius: 12px;
+  background-color: #f5f5f5;
   margin-bottom: 20px;
 }
 
 .post-details h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #1a237e;
 }
 
 .post-details p {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333333;
 }
 
 .post-details .author {
   font-style: italic;
+  color: #757575;
 }
 
 .post-details .likes-dislikes {
-  margin-top: 10px;
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333333;
 }

@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.232a7f35.css",
-    "main.js": "/react-gh-pages/static/js/main.cc28fe74.js",
-    "static/js/787.08772942.chunk.js": "/react-gh-pages/static/js/787.08772942.chunk.js",
-    "index.html": "/react-gh-pages/index.html",
-    "main.232a7f35.css.map": "/react-gh-pages/static/css/main.232a7f35.css.map",
-    "main.cc28fe74.js.map": "/react-gh-pages/static/js/main.cc28fe74.js.map",
-    "787.08772942.chunk.js.map": "/react-gh-pages/static/js/787.08772942.chunk.js.map"
+    "main.css": "/webmosaic/static/css/main.232a7f35.css",
+    "main.js": "/webmosaic/static/js/main.bebaa0aa.js",
+    "static/js/787.08772942.chunk.js": "/webmosaic/static/js/787.08772942.chunk.js",
+    "index.html": "/webmosaic/index.html",
+    "main.232a7f35.css.map": "/webmosaic/static/css/main.232a7f35.css.map",
+    "main.bebaa0aa.js.map": "/webmosaic/static/js/main.bebaa0aa.js.map",
+    "787.08772942.chunk.js.map": "/webmosaic/static/js/787.08772942.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.232a7f35.css",
-    "static/js/main.cc28fe74.js"
+    "static/js/main.bebaa0aa.js"
   ]
 }
